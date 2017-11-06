@@ -4,7 +4,7 @@ This is the repository for the highly popular website, Silly Widgets. Thanks for
 
 # Stuff
 
-* Uses SillyWidgets version 0.4.0
+* Uses SillyWidgets, [the latest version](https://www.nuget.org/packages/sillywidgets/)
 * Hot to the touch
 
 # todo
