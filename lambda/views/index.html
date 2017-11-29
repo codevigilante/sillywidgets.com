@@ -1,14 +1,107 @@
 <html silly:view="comingsoon">
     <head>
         <title silly:text="pagetitle">{pagetitle}</title>
-        <link href="https://fonts.googleapis.com/css?family=Rubik|Marcellus" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://s3-us-west-1.amazonaws.com/sillywidgets.com/css/style.css">
     </head>
-    <body class="align-center">
-        <h1 silly:text="heading">{heading}</h1>
-        <h2 silly:text="subheading">{subheading}</h2>
-        <p silly:text="description">{description}</p>
-        <h3 silly:text="launchdate">{launchdate}</h3>
-        <p><small silly:text="contact">{contact email}</small></p>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="http://sillywidgets.com">Silly Widgets <span class="badge badge-secondary" silly:text="version">{version}</span></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <!--
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="http://sillywidgets.com">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                -->
+                </div>
+            </div>
+        </nav>
+      
+        <!-- Hero -->
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading display-3">Build Kick Ass Web Apps <em><b>Fast, Easy, & Cheap</b></em></h1>
+                <p class="lead text-muted">for developers who hate paying unused hosting costs</p>
+                <p class="text-muted">C# + .NET Core + AWS Lambda &nbsp;&bull;&nbsp; free, open source, and sexy as shit</p>
+                <p>
+                    <a href="https://www.nuget.org/packages/SillyWidgets/" class="btn btn-primary">Get It from Nuget</a>
+                    <a href="https://github.com/codevigilante/sillywidgets" class="btn btn-secondary">See The Code</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Technologies -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">The Power & Productivity of C# + .NET Core</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Cross platform, free, and well supported</h6>
+                            <p class="card-text">C# is everyone's favoritist development language, right? RIGHT? Coupled with Microsoft's .NET Core, it's productive and powerful. The perfect tool for getting up and running fast.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">The Scalability of Amazon Web Services</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Cheap, highly configurable, and disposable</h6>
+                            <p class="card-text">Amazon's plethora of web services, like Lambda, is the perfect playground to develop serious small to medium applications on the cheap, without commitment. Coupled with S3, API Gateway, RDS, whatever, the possibilities are endless.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Develop Anywhere</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Windows, Mac, Linux, Uranus</h6>
+                            <p class="card-text">If you don't have Daddy's money to throw at Visual Studio, try VS Code. It's free, cross platform, and supports C# and a shit ton of others. Coupled with git and the dotnet CLI (don't be scared), you'll be the horny everyone seeks, what?</p>
+                            <a href="https://code.visualstudio.com/" target="_blank" class="card-link">VS Code</a>
+                            <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet?tabs=netcore2x" target="_blank" class="card-link">dotnet CLI</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Getting Started -->
+        <div class="container getting-started">
+            <h1 class="display-4 text-center">Where To Start?</h1>
+            <p class="text-center"><small class="text-muted">(needs improvement)</small></p>
+            <p></p>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="container text-center">
+                <p><small class="text-muted">Silly Widgets was created by a musician turned comedian turned patio farmer named A-ron and is developed by a powerful digital entity called codevigilante.</small></p>
+            </div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     </body>
 </html>

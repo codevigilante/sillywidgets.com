@@ -1,65 +1,37 @@
 *
 {
-    margin:0;
-    padding:0;
-    border:none;
+    font-family: 'PT Serif', serif;
 }
 
 body
 {
-    margin:75px auto;
-    width:825px;
-    padding:20px;
+    padding-top:54px;
 }
 
-h1,h2
+.jumbotron .container
 {
-    font-family: 'Rubik', sans-serif;
-    margin: 10px;
-    padding:5px;
+    max-width:55rem;
 }
 
-h2,h3
+h1,
+.navbar-brand
 {
-    color:#444;
+    font-family: 'PT Sans', sans-serif;
 }
 
-h3,p
+.navbar-brand
 {
-    font-family: 'Marcellus', serif;
-    margin:5px;
-    padding:10px;
+    color: #a30101;
 }
 
-h1
+.getting-started
 {
-    font-size:48px;
-    border-bottom: 1px solid #c1c1c1;
+    margin-top: 1rem;
+    padding: 2rem;
 }
 
-h2
+footer
 {
-    font-size:36px;
-}
-
-h3
-{
-    font-size:24px;
-    background:#ffffcc;
-    border:2px solid yellow;
-}
-
-h4
-{
-    font-size:20px;
-}
-
-p
-{
-    color:#555;
-}
-
-.align-center
-{
-    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid #ccc;
 }

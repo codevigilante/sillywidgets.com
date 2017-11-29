@@ -8,7 +8,7 @@ namespace SillyWidgetsLambda
         public SillyWidgetsProxy()
             : base()
         {
-            base.RegisterController("root", typeof(Root));
+            base.RegisterController("root", new Root());
 
             GET("root", "/", "root", "Index");
         }
