@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using System.IO;
 using SillyWidgets;
+using Amazon.DynamoDBv2.DocumentModel;
 
 namespace SillyWidgetsLambda
 {
@@ -15,20 +16,19 @@ namespace SillyWidgetsLambda
 
         public ISillyView Index(ISillyContext context)
         {
-            Console.WriteLine("root.Index");
             SillyView home = new SillyView();
             Task<bool> result = home.LoadS3Async("sillywidgets.com", "index.html", Amazon.RegionEndpoint.USWest1);
+            Task<Document> data = base.DynamoGetItemAsync(Amazon.RegionEndpoint.USWest1, "sillywidgets", "codevigilante@gmail.com");
 
             result.Wait();
-
-            Console.WriteLine(result.Result);
+            data.Wait();
 
             if (!result.Result)
             {
                 return(null);
             }
             
-            home.Bind("version", "v0.5");
+            home.Bind(data.Result);
             
             return(home);
         }

@@ -1,6 +1,6 @@
 <html silly:view="comingsoon">
     <head>
-        <title silly:text="pagetitle">{pagetitle}</title>
+        <title silly:text="brand">{Silly Widgets}</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://s3-us-west-1.amazonaws.com/sillywidgets.com/css/style.css">
@@ -9,7 +9,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="http://sillywidgets.com">Silly Widgets <span class="badge badge-secondary" silly:text="version">{version}</span></a>
+                <a class="navbar-brand" href="http://sillywidgets.com">Silly Widgets v<span class="badge badge-secondary" silly:text="version">{version}</span></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@
         <!-- Hero -->
         <section class="jumbotron text-center">
             <div class="container">
-                <h1 class="jumbotron-heading display-3">Build Kick Ass Web Apps <em><b>Fast, Easy, & Cheap</b></em></h1>
+                <h1 class="jumbotron-heading display-3" silly:text="herotitle">{Hello}</h1>
                 <p class="lead text-muted">for developers who hate paying unused hosting costs</p>
                 <p class="text-muted">C# + .NET Core + AWS Lambda &nbsp;&bull;&nbsp; free, open source, and sexy as shit</p>
                 <p>
@@ -68,7 +68,7 @@
                         <div class="card-body">
                             <h4 class="card-title">The Scalability of Amazon Web Services</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Cheap, highly configurable, and disposable</h6>
-                            <p class="card-text">Amazon's plethora of web services, like Lambda, is the perfect playground to develop serious small to medium applications on the cheap, without commitment. Coupled with S3, API Gateway, RDS, whatever, the possibilities are endless.</p>
+                            <p class="card-text">Amazon's plethora of web services, like Lambda, is the perfect playground to develop serious small to medium applications on the cheap, without commitment. Coupled with S3, API Gateway, DynamoDB, whatever, the possibilities are endless.</p>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
         <!-- Getting Started -->
         <div class="container getting-started">
             <h1 class="display-4 text-center">Where To Start?</h1>
-            <p class="text-center"><small class="text-muted">(needs improvement)</small></p>
+            <p class="text-center"><a href="https://github.com/codevigilante/sillywidgets/blob/master/README.md">Read the README</a> or wait for the manual that will cost about 5 bitcoin, which is approximately $79,744</p>
             <p></p>
         </div>
 
